@@ -2,17 +2,17 @@
 Some vim mappings I use while coding phaser.
 
 <leader>scene 
-class scene extends Phaser.Scene{
-  constructor(){
-    super("")
-  }
-  preload(){
-  }
-  create(){
-  }
-  update{
-  }
-  
+class scene extends Phaser.Scene{  
+  constructor(){  
+    super("")  
+  }  
+  preload(){  
+  }  
+  create(){  
+  }  
+  update{  
+  }  
+    
 <leader>loadaud 
 this.load.audio("", "")
 
