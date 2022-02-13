@@ -1,7 +1,7 @@
 # phaserVim
 Some vim mappings I use while coding phaser.
 
-<leader>scene 
+<leader>scene   
 class scene extends Phaser.Scene{  
   constructor(){  
     super("")  
