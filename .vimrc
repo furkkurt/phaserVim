@@ -1,4 +1,4 @@
-let mapleader ="," 
+let mapleader ="ş" 
 set encoding=utf8
 colorscheme atom-dark-256 "colorscheme
 set nu! "line numbers
@@ -32,7 +32,7 @@ nnoremap <Leader>Q :q!<CR>
 nnoremap <leader>n :set nu!<CR>
 
 inoremap <leader>if if(){<CR>}<ESC>k2la
-inoremap <leader>else else{<CR>}<ESC>k2la
+inoremap <leader>else else{<CR>}<ESC>k3la
 inoremap <leader>elif else if(){<CR>}<ESC>k2la
 inoremap <leader>locset localStorage.setItem("", "")<ESC>6ha
 inoremap <leader>locget localStorage.setItem("")<ESC>ha
@@ -42,17 +42,17 @@ inoremap <leader>scene class scene extends Phaser.Scene{<CR>constructor(){<CR>su
 inoremap <leader>loadaud this.load.audio("", "")<ESC>6ha
 inoremap <leader>loadimg this.load.image("", "")<ESC>6ha
 inoremap <leader>loadatl this.load.atlas("", "", "")<ESC>10ha
-inoremap <leader>anims this.anims.create({<CR>key:"",<CR>frameRate: ,<CR>frames: [],<CR>repeat: <CR>})<ESC>4k5la
+inoremap <leader>anims this.anims.create({<CR>key: "",<CR>frameRate: ,<CR>frames: [],<CR>repeat: <CR>})<ESC>4k6la
 inoremap <leader>spr this.add.sprite()<ESC>ha
 inoremap <leader>pspr this.physics.add.sprite()<ESC>ha
 inoremap <leader>tspr this.add.tileSprite()<ESC>ha
 inoremap <leader>txt this.add.text()<ESC>ha
 inoremap <leader>sound this.sound.play("")<ESC>2ha
 inoremap <leader>nosound this.sound.stopAll()
-inoremap <leader>timee this.time.addEvent({<CR>delay: <CR>callback:() =>{<CR>}<CR>})<ESC>3k7la
-inoremap <leader>pdown this..on("pointerdown", () => {<CR>})<ESC>k3la
-inoremap <leader>pover this..on("pointerover", () => {<CR>})<ESC>k3la
-inoremap <leader>pout this..on("pointerout", () => {<CR>})<ESC>k3la
+inoremap <leader>timee this.time.addEvent({<CR>delay: ,<CR>callback:() =>{<CR>}<CR>})<ESC>3k7la
+inoremap <leader>pdown .on("pointerdown", () => {<CR><CR>})<ESC>ka
+inoremap <leader>pover .on("pointerover", () => {<CR><CR>})<ESC>ka
+inoremap <leader>pout .on("pointerout", () => {<CR><CR>})<ESC>ka
 inoremap <leader>tilemap this.make.tilemap({<CR>key: "",<CR>tileWidth: ,<CR>tileHeight: <CR>})<ESC>3k6la
 inoremap <leader>colbyex .setCollisionByExclusion([-1])
 inoremap <leader>collider this.physics.add.collider()<ESC>ha
